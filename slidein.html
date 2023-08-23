@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <style>
+        @keyframes slideInLeft{
+        from{
+            tranform: translateX(-300px);
+
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+        .h1{
+            animation-name: slideInLeft;
+            animation-duration: 3s;
+            animation-timing-function:ease-in-out;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            transform: translateX(-150px);
+            
+        }
+
+        @keyframes  rotate{
+        from{
+            transform: rotate(0);
+        } to {
+            transform: rotate(360deg);
+        }   
+        }
+        .h2{
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode:forwards;
+
+           
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="h1">Hi How are u</h1>
+    <h1 class="h2">FUCK U</h1>
+</body>
+</html>

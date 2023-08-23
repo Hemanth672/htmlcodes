@@ -1,0 +1,13 @@
+table,th,td{
+border: 3px solid rgb(68, 18, 230);
+border-collapse:collapse :separate ;
+}
+tr:nth-child(1){
+    background-color:coral;
+}
+tr:nth-child(3) td:nth-child(4){
+    background-color: darkturquoise;
+}
+tr:nth-child(2) td:nth-child(4){
+    background-color: greenyellow;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <center>
+        <style>
+            .required:after{
+                content:'*';
+                color: red;
+            
+            }
+            .required2:after{
+                content: '*';
+                color: red;
+            }
+            [data-tooltip]{
+                position: relative;
+            }
+            [data-tooltip]:hover:after{
+                content:attr(data-tooltip);
+            top:100%;
+            left:0;
+            right:0;
+            color: blue;
+            position:absolute;
+            margin-top: 10%;
+            background-color: black ;
+
+            }
+            span[title]{
+                background-color: crimson;
+            }
+            #Hemanth {
+                height: 200px;
+                background-color: white;
+                background-image: linear-gradient(green,white,pink,red);
+                background-image: linear-gradient(to right, white,);
+            }
+            p{
+                transform: translate(5px, 5px);
+                transform: rotate(5deg);
+
+            }
+            img{
+                height: 400px;
+                width: 300px;
+                transform : translate(200px,50px);
+                transform: rotate(-60deg)
+            }
+        </style>
+
+</head>
+<h1>Login Using Username</h1>
+<body>
+    
+    <label class="required">Name</label>
+    <input type="text">
+    <br>
+    <label class="required2">Password</label>
+    <input type="text"> <br>
+    <button data-tooltip="Click to Submit">Submit</button>
+</center>
+<p>Im not in <span title="fu">Danger</span> skyler, Im the Danger</p>
+<hr>
+<center>
+<div id="Hemanth" title="fun">
+    <h1>Thank You</h1>
+
+</div>
+</center>
+<br> 
+<p>Hi My name is Walter Hartwell White and i live at  308 *** street at Albequerque in New Mexico, Iam Currently Working as a Meth cook Under Gus Fring for his **** business </p>
+<br>
+<center>
+<img src="https://pbs.twimg.com/media/FJkSH9QUcAAGm-Z?format=jpg&name=4096x4096">
+</center>
+</body>
+</html>

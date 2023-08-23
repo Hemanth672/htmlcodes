@@ -1,0 +1,11 @@
+#q1{
+    border: 3px solid black;
+    border-collapse: collapse : separate;
+    color: blue;
+}
+td,th{
+    border: 3px solid rgb(128, 0, 70);
+}
+h1 {
+    color: chartreuse;
+}

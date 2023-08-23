@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function()
+        { 
+           var canvas = document.getElementById("mycanvas");
+            var context= canvas.getContext("2d"); 
+            context.moveTo(50,150);
+            context.lineTo(250,50);
+            context.stroke();
+            context.rect(50,50,200,100)
+            context.stroke(); 
+            context.arc(150,150,80,1.2*Math.PI,1.8*Math.PI,false);
+            context.stroke();
+            context.arc(150,150,80,1.2*Math.PI,1.8*Math.PI,true);
+            context.stroke(); 
+
+
+
+
+        };
+    </script>
+</head>
+<body>
+    <iframe src="file:///C:/Users/heman/OneDrive/Desktop/HTML/Registrationform.html" width="800px" height="500px"></iframe>
+<br>
+<video width="700" height="500"controls> <source src="D:\LOYALTY\6C8A3561.MP4" type="video/mp4"></video>
+<br>
+<form>
+    <center>
+    <h1> User Login</h1>
+    <label>EMAIL</label>
+    <input type="email" placeholder= "Enter Email" required>
+    <br>
+    <label>PASSWORD</label>
+    <input type="password" placeholder="Enter Password" maxlength="4" required>
+    <br>
+    <button>LOGIN</button> <br>
+    <button>RESET</button> <br>
+    <canvas id="mycanvas" width="500" height="500"></canvas>
+
+</center>
+</form>
+
+</body>
+</html>
